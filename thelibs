@@ -1655,6 +1655,7 @@ function DiscordLib:Window(text)
 		end)
 	end
 
+        MakeDraggable(MainFrame, MainFrame)
 	MakeDraggable(TopFrame, MainFrame)
 	ServersHoldPadding.PaddingLeft = UDim.new(0, 14)
 	local ServerHold = {}
