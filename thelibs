@@ -2173,9 +2173,9 @@ function DiscordLib:Window(text)
 			end
 function ChannelContent:ClearButtons()
     for _, btn in ipairs(ChannelHolder:GetChildren()) do
-        if btn:IsA("TextButton") then
- warn(btn.Text)
+        if btn:IsA("TextButton") 
         and btn.Text ~= "Show More Scripts" then
+      warn(btn.Text)
             btn:Destroy()
         end
     end
